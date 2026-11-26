@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Economy of Indonesia — Angka Nusantara</title>
+<meta name="description" content="Indonesia's economy: GDP growth and inflation since 2015, GDP per person, exports, unemployment and poverty, with sources and years.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='6'%20fill='%23123f28'/%3E%3Ctext%20x='16'%20y='22'%20font-size='18'%20text-anchor='middle'%20fill='%23fffdf8'%20font-family='sans-serif'%20font-weight='bold'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="economy">
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">Angka Nusantara<small>Indonesia in numbers</small></a>
+    <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="siteNav">Menu</button>
+    <nav class="site-nav" id="siteNav" aria-label="Sections">
+      <ul>
+        <li><a href="index.html">Summary</a></li>
+        <li><a href="population.html">Population</a></li>
+        <li><a href="economy.html" aria-current="page">Economy</a></li>
+        <li><a href="health.html">Health</a></li>
+        <li><a href="education.html">Education</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <p class="kicker">Economy</p>
+  <h1>A US$1.40 trillion economy</h1>
+  <p class="lede">Indonesia is Southeast Asia's largest economy and the world's 16th largest by nominal GDP. Growth has held near 5% a year since the pandemic, while inflation fell to 1.57% in 2024 — its lowest in years.</p>
+
+  <section class="stat-grid" aria-label="Economy headline figures">
+    <article class="stat-card">
+      <div class="value">5.03%</div>
+      <div class="label">GDP growth</div>
+      <div class="detail">Real growth, year on year; 5.05% in 2023</div>
+      <div class="source">Source: BPS, 2024</div>
+    </article>
+    <article class="stat-card">
+      <div class="value">Rp 22,139tn</div>
+      <div class="label">Nominal GDP</div>
+      <div class="detail">About US$1.40 trillion at current prices</div>
+      <div class="source">Source: BPS, 2024</div>
+    </article>
+    <article class="stat-card">
+      <div class="value">US$4,960</div>
+      <div class="label">GDP per person</div>
+      <div class="detail">Rp 78.62 million; US$4,925 by the World Bank's count</div>
+      <div class="source">Source: BPS, 2024</div>
+    </article>
+    <article class="stat-card">
+      <div class="value">1.57%</div>
+      <div class="label">Inflation</div>
+      <div class="detail">Consumer prices, December year on year</div>
+      <div class="source">Source: BPS, 2024</div>
+    </article>
+    <article class="stat-card">
+      <div class="value">US$264.7bn</div>
+      <div class="label">Exports</div>
+      <div class="detail">Goods exported in the year, up 2.3% on 2023</div>
+      <div class="source">Source: BPS, 2024</div>
+    </article>
+    <article class="stat-card">
+      <div class="value">6.00%</div>
+      <div class="label">Policy rate</div>
+      <div class="detail">Bank Indonesia's benchmark rate at year end</div>
+      <div class="source">Source: Bank Indonesia, December 2024</div>
+    </article>
+  </section>
+
+  <h2>Growth and prices, 2015–2024</h2>
+  <p>Switch the chart between real GDP growth and consumer-price inflation. The 2020 bar is the pandemic contraction; the 2022 inflation spike is the only year in the decade above 4%.</p>
+  <div class="toggle-group" id="economyToggle" role="group" aria-label="Choose what the chart shows">
+    <button type="button" data-view="growth" aria-pressed="true">GDP growth</button>
+    <button type="button" data-view="inflation" aria-pressed="false">Inflation</button>
+  </div>
+  <div class="chart-card">
+    <h3>Real GDP growth, 2015–2024</h3>
+    <div id="economyChart" role="img" aria-label="Chart of GDP growth or inflation from 2015 to 2024"></div>
+    <p class="source-note">Percent, year on year. Source: BPS (Statistics Indonesia), 2015–2024.</p>
+  </div>
+
+  <h2>Jobs and poverty</h2>
+  <table>
+    <caption>Labour market and poverty, 2024</caption>
+    <thead>
+      <tr><th scope="col">Indicator</th><th scope="col" class="num">Value</th><th scope="col">When</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Open unemployment rate</td><td class="num">4.91%</td><td>August 2024</td></tr>
+      <tr><td>People unemployed</td><td class="num">7.47 million</td><td>August 2024</td></tr>
+      <tr><td>Poverty rate</td><td class="num">8.57%</td><td>September 2024</td></tr>
+      <tr><td>People in poverty</td><td class="num">24.06 million</td><td>September 2024</td></tr>
+      <tr><td>Poverty line</td><td class="num">Rp 595,242 / person / month</td><td>September 2024</td></tr>
+    </tbody>
+  </table>
+  <p class="source-note">Source: BPS (Statistics Indonesia), 2024. Unemployment and poverty both fell against the same months of 2023: unemployment was 5.32% in August 2023, and the poverty rate was 9.36% in September 2023.</p>
+
+  <div class="callout amber">
+    <strong>What the numbers mean.</strong> At 5.03% growth with 1.57% inflation, 2024 was a steady year: output rose while prices barely moved. The poverty line is a spending line — someone counts as poor when their monthly spending per person falls below Rp 595,242, not when their income does.
+  </div>
+
+  <h2>Sources for this page</h2>
+  <ul class="sources">
+    <li>BPS (Statistics Indonesia) — GDP growth and nominal GDP, inflation, exports, unemployment and poverty, 2015–2024.</li>
+    <li>Bank Indonesia — benchmark policy rate, December 2024.</li>
+    <li>World Bank, World Development Indicators — GDP per capita in US dollars, 2024.</li>
+  </ul>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    Angka Nusantara is an independent reference site. It is not affiliated with BPS, Bank Indonesia, the World Bank or any government body. Figures are quoted with their publisher and year; check the source list on each page before reusing a number.
+  </div>
+</footer>
+<script type="module" src="main.js"></script>
+</body>
+</html>

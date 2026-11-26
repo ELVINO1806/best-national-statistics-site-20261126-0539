@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Population of Indonesia — Angka Nusantara</title>
+<meta name="description" content="Indonesia's population: ten years of growth, the five largest provinces, urban share, median age and fertility, with sources and years.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='6'%20fill='%23123f28'/%3E%3Ctext%20x='16'%20y='22'%20font-size='18'%20text-anchor='middle'%20fill='%23fffdf8'%20font-family='sans-serif'%20font-weight='bold'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="population">
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">Angka Nusantara<small>Indonesia in numbers</small></a>
+    <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="siteNav">Menu</button>
+    <nav class="site-nav" id="siteNav" aria-label="Sections">
+      <ul>
+        <li><a href="index.html">Summary</a></li>
+        <li><a href="population.html" aria-current="page">Population</a></li>
+        <li><a href="economy.html">Economy</a></li>
+        <li><a href="health.html">Health</a></li>
+        <li><a href="education.html">Education</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <p class="kicker">Population</p>
+  <h1>281.6 million people</h1>
+  <p class="lede">Indonesia is the world's fourth most populous country. Its population grew by about 2.9 million people in 2024, and nearly three in five Indonesians now live in towns and cities.</p>
+
+  <section class="stat-grid" aria-label="Population headline figures">
+    <article class="stat-card">
+      <div class="value">281.6m</div>
+      <div class="label">Total population</div>
+      <div class="detail">Mid-year estimate; up from 278.7m in 2023</div>
+      <div class="source">Source: BPS, 2024</div>
+    </article>
+    <article class="stat-card">
+      <div class="value">59.0%</div>
+      <div class="label">Urban share</div>
+      <div class="detail">Share of people living in urban areas</div>
+      <div class="source">Source: UN World Population Prospects, 2024</div>
+    </article>
+    <article class="stat-card">
+      <div class="value">30.1 years</div>
+      <div class="label">Median age</div>
+      <div class="detail">Half the population is younger, half older</div>
+      <div class="source">Source: UN World Population Prospects, 2024</div>
+    </article>
+    <article class="stat-card">
+      <div class="value">2.1</div>
+      <div class="label">Fertility rate</div>
+      <div class="detail">Children per woman, near replacement level</div>
+      <div class="source">Source: UN World Population Prospects, 2024</div>
+    </article>
+    <article class="stat-card">
+      <div class="value">148 /km²</div>
+      <div class="label">Population density</div>
+      <div class="detail">People per square kilometre of land</div>
+      <div class="source">Source: BPS, 2024</div>
+    </article>
+    <article class="stat-card">
+      <div class="value">50.3m</div>
+      <div class="label">West Java</div>
+      <div class="detail">The most populous province, about 18% of the country</div>
+      <div class="source">Source: BPS, 2024</div>
+    </article>
+  </section>
+
+  <h2>Ten years of growth</h2>
+  <p>Switch the chart between the total headcount and the yearly growth rate. Growth has slowed from about 1.3% a year in 2015 to about 1.0% in 2024.</p>
+  <div class="toggle-group" id="populationToggle" role="group" aria-label="Choose what the chart shows">
+    <button type="button" data-view="total" aria-pressed="true">Total population</button>
+    <button type="button" data-view="growth" aria-pressed="false">Yearly growth rate</button>
+  </div>
+  <div class="chart-card">
+    <h3>Population, 2015–2024</h3>
+    <div id="populationChart" role="img" aria-label="Chart of Indonesia's population from 2015 to 2024"></div>
+    <p class="source-note">Millions of people, mid-year estimates. Source: BPS (Statistics Indonesia), 2015–2024.</p>
+  </div>
+
+  <h2>Where people live</h2>
+  <p>Java holds more than half the population on less than 7% of the land. The five provinces below together hold about 158 million people — more than half the country.</p>
+  <div class="chart-card">
+    <h3>Largest provinces</h3>
+    <div id="provinceChart" role="img" aria-label="Chart of the five largest provinces by population"></div>
+    <p class="source-note">Millions of people. Source: BPS, 2024.</p>
+  </div>
+
+  <table>
+    <caption>Largest provinces by population, 2024</caption>
+    <thead>
+      <tr><th scope="col">Rank</th><th scope="col">Province</th><th scope="col" class="num">People (millions)</th></tr>
+    </thead>
+    <tbody id="provinceBody"></tbody>
+  </table>
+  <button class="action-button" id="provinceSort" type="button">Sort: largest first (click for smallest)</button>
+  <p class="source-note">Source: BPS (Statistics Indonesia), 2024. The table is sorted with the button above.</p>
+
+  <div class="callout">
+    <strong>Why two population totals?</strong> BPS counts 281.6 million people in 2024; the United Nations counts 283.5 million for the same year. The gap comes from different methods — BPS builds on the 2020 census and its own projections, the UN on its global model. This site uses the BPS figure as its headline and names the publisher wherever the UN figure appears.
+  </div>
+
+  <h2>Sources for this page</h2>
+  <ul class="sources">
+    <li>BPS (Statistics Indonesia) — total population 2015–2024, provincial populations and density, 2024.</li>
+    <li>United Nations, World Population Prospects 2024 — urban share, median age and fertility rate, 2024.</li>
+  </ul>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    Angka Nusantara is an independent reference site. It is not affiliated with BPS, the United Nations or any government body. Figures are quoted with their publisher and year; check the source list on each page before reusing a number.
+  </div>
+</footer>
+<script type="module" src="main.js"></script>
+</body>
+</html>

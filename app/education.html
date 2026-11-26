@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Education in Indonesia — Angka Nusantara</title>
+<meta name="description" content="Education in Indonesia: years of schooling, the education budget, literacy, enrolment and PISA scores, with sources and years.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='6'%20fill='%23123f28'/%3E%3Ctext%20x='16'%20y='22'%20font-size='18'%20text-anchor='middle'%20fill='%23fffdf8'%20font-family='sans-serif'%20font-weight='bold'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="education">
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">Angka Nusantara<small>Indonesia in numbers</small></a>
+    <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="siteNav">Menu</button>
+    <nav class="site-nav" id="siteNav" aria-label="Sections">
+      <ul>
+        <li><a href="index.html">Summary</a></li>
+        <li><a href="population.html">Population</a></li>
+        <li><a href="economy.html">Economy</a></li>
+        <li><a href="health.html">Health</a></li>
+        <li><a href="education.html" aria-current="page">Education</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <p class="kicker">Education</p>
+  <h1>More years in school, slowly</h1>
+  <p class="lede">The average Indonesian adult has now spent 8.85 years in school — up by almost a full year since 2015. Nine years of schooling are compulsory, and the state budget for education reached Rp 665 trillion in 2024.</p>
+
+  <section class="stat-grid" aria-label="Education headline figures">
+    <article class="stat-card">
+      <div class="value">8.85 years</div>
+      <div class="label">Mean schooling</div>
+      <div class="detail">Average years of schooling, people aged 25 and over</div>
+      <div class="source">Source: BPS, 2024</div>
+    </article>
+    <article class="stat-card">
+      <div class="value">13.21 years</div>
+      <div class="label">Expected schooling</div>
+      <div class="detail">Years a child entering school today can expect</div>
+      <div class="source">Source: BPS, 2024</div>
+    </article>
+    <article class="stat-card">
+      <div class="value">Rp 665tn</div>
+      <div class="label">Education budget</div>
+      <div class="detail">At least 20% of the state budget by law</div>
+      <div class="source">Source: Ministry of Finance, 2024</div>
+    </article>
+    <article class="stat-card">
+      <div class="value">96%</div>
+      <div class="label">Adult literacy</div>
+      <div class="detail">Adults aged 15 and over who can read and write</div>
+      <div class="source">Source: UNESCO, 2020</div>
+    </article>
+    <article class="stat-card">
+      <div class="value">44.9%</div>
+      <div class="label">Tertiary enrolment</div>
+      <div class="detail">Gross enrolment in higher education</div>
+      <div class="source">Source: World Bank, 2023</div>
+    </article>
+    <article class="stat-card">
+      <div class="value">98.9%</div>
+      <div class="label">Primary completion</div>
+      <div class="detail">Children finishing primary school</div>
+      <div class="source">Source: World Bank, 2025</div>
+    </article>
+  </section>
+
+  <h2>A decade of schooling</h2>
+  <p>Switch between the schooling adults actually received and the schooling a child starting today can expect. Both climb steadily, but the gap between them — about four years — shows how much schooling has expanded in a single generation.</p>
+  <div class="toggle-group" id="schoolingToggle" role="group" aria-label="Choose what the chart shows">
+    <button type="button" data-view="mean" aria-pressed="true">Mean years of schooling</button>
+    <button type="button" data-view="expected" aria-pressed="false">Expected years of schooling</button>
+  </div>
+  <div class="chart-card">
+    <h3>Years of schooling, 2015–2024</h3>
+    <div id="schoolingChart" role="img" aria-label="Chart of years of schooling from 2015 to 2024"></div>
+    <p class="source-note">Years. Mean schooling covers people aged 25 and over; expected schooling is for a child entering school. Source: BPS (Statistics Indonesia), 2015–2024.</p>
+  </div>
+
+  <h2>How students perform</h2>
+  <p>In the OECD's PISA 2022 assessment of 15-year-olds, Indonesia scored 366 in mathematics, 359 in reading and 383 in science — below the OECD averages of 472, 476 and 485, but up on the country's 2018 results in mathematics and reading.</p>
+  <div class="chart-card">
+    <h3>PISA 2022 scores</h3>
+    <div id="pisaChart" role="img" aria-label="Chart of PISA 2022 scores in mathematics, reading and science"></div>
+    <p class="source-note">PISA points, 15-year-olds. Source: OECD, PISA 2022.</p>
+  </div>
+
+  <div class="callout amber">
+    <strong>The gap within the country.</strong> Mean schooling in Jakarta is 11.49 years; in Highland Papua it is 5.10 years. The national average of 8.85 years sits between two very different Indonesias.
+  </div>
+
+  <h2>Sources for this page</h2>
+  <ul class="sources">
+    <li>BPS (Statistics Indonesia) — mean and expected years of schooling, 2015–2024, and the Human Development Index, 2024.</li>
+    <li>Ministry of Finance, Republic of Indonesia — education budget, 2024.</li>
+    <li>UNESCO Institute for Statistics — adult literacy rate, 2020.</li>
+    <li>World Bank, World Development Indicators — tertiary enrolment, 2023, and primary completion, 2025.</li>
+    <li>OECD — PISA 2022 scores, 2022.</li>
+  </ul>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    Angka Nusantara is an independent reference site. It is not affiliated with BPS, the OECD, UNESCO, the World Bank or any government body. Figures are quoted with their publisher and year; check the source list on each page before reusing a number.
+  </div>
+</footer>
+<script type="module" src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Health in Indonesia — Angka Nusantara</title>
+<meta name="description" content="Health in Indonesia: life expectancy, child mortality, stunting, health spending, doctors and hospital beds, with sources and years.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='6'%20fill='%23123f28'/%3E%3Ctext%20x='16'%20y='22'%20font-size='18'%20text-anchor='middle'%20fill='%23fffdf8'%20font-family='sans-serif'%20font-weight='bold'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="health">
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">Angka Nusantara<small>Indonesia in numbers</small></a>
+    <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="siteNav">Menu</button>
+    <nav class="site-nav" id="siteNav" aria-label="Sections">
+      <ul>
+        <li><a href="index.html">Summary</a></li>
+        <li><a href="population.html">Population</a></li>
+        <li><a href="economy.html">Economy</a></li>
+        <li><a href="health.html" aria-current="page">Health</a></li>
+        <li><a href="education.html">Education</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <p class="kicker">Health</p>
+  <h1>Living longer, still catching up</h1>
+  <p class="lede">A newborn in Indonesia can expect 71.3 years of life. Child deaths keep falling and stunting is down by nearly eight points since 2019 — but health spending is still under 3% of GDP, and there is only about one doctor for every 2,000 people.</p>
+
+  <section class="stat-grid" aria-label="Health headline figures">
+    <article class="stat-card">
+      <div class="value">71.3 years</div>
+      <div class="label">Life expectancy</div>
+      <div class="detail">At birth; 73.3 for women, 69.0 for men (2023)</div>
+      <div class="source">Source: World Bank, 2024</div>
+    </article>
+    <article class="stat-card">
+      <div class="value">15.2</div>
+      <div class="label">Infant mortality</div>
+      <div class="detail">Deaths before age one, per 1,000 live births</div>
+      <div class="source">Source: UN IGME, 2024</div>
+    </article>
+    <article class="stat-card">
+      <div class="value">17.7</div>
+      <div class="label">Under-five mortality</div>
+      <div class="detail">Deaths before age five, per 1,000 live births</div>
+      <div class="source">Source: World Bank, 2024</div>
+    </article>
+    <article class="stat-card">
+      <div class="value">19.8%</div>
+      <div class="label">Child stunting</div>
+      <div class="detail">Children under five who are short for their age</div>
+      <div class="source">Source: Ministry of Health (SSGI/SKI), 2024</div>
+    </article>
+    <article class="stat-card">
+      <div class="value">2.7%</div>
+      <div class="label">Health spending</div>
+      <div class="detail">Current health expenditure as a share of GDP</div>
+      <div class="source">Source: World Bank, 2023</div>
+    </article>
+    <article class="stat-card">
+      <div class="value">0.52</div>
+      <div class="label">Physicians</div>
+      <div class="detail">Doctors per 1,000 people; 1.37 hospital beds per 1,000</div>
+      <div class="source">Source: World Bank, 2023</div>
+    </article>
+  </section>
+
+  <h2>Stunting is falling</h2>
+  <p>Stunting — children growing too slowly for their age — fell from 27.7% in 2019 to 19.8% in 2024. It stalled in 2023, then dropped again. The government's earlier target was 14% by 2024, which was not reached.</p>
+  <div class="toggle-group" id="stuntingToggle" role="group" aria-label="Choose the chart style">
+    <button type="button" data-view="bar" aria-pressed="true">Bars</button>
+    <button type="button" data-view="line" aria-pressed="false">Line</button>
+  </div>
+  <div class="chart-card">
+    <h3>Children under five who are stunted, 2019–2024</h3>
+    <div id="stuntingChart" role="img" aria-label="Chart of child stunting from 2019 to 2024"></div>
+    <p class="source-note">Percent of children under five. No national survey was published for 2020. Source: Ministry of Health, SSGI and SKI surveys, 2019–2024.</p>
+  </div>
+
+  <h2>The health system in figures</h2>
+  <table>
+    <caption>Health system indicators</caption>
+    <thead>
+      <tr><th scope="col">Indicator</th><th scope="col" class="num">Value</th><th scope="col">Source and year</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Maternal mortality</td><td class="num">140 per 100,000 live births</td><td>World Bank, 2023</td></tr>
+      <tr><td>Health insurance coverage</td><td class="num">75.5% of people</td><td>Susenas / BPS, March 2024</td></tr>
+      <tr><td>Births in a health facility</td><td class="num">90.0%</td><td>Ministry of Health surveys, 2023</td></tr>
+      <tr><td>Hospital beds</td><td class="num">1.37 per 1,000 people</td><td>World Bank, 2023</td></tr>
+      <tr><td>Healthy life expectancy</td><td class="num">63.7 years</td><td>World Health Organization, 2023</td></tr>
+    </tbody>
+  </table>
+  <p class="source-note">Healthy life expectancy is the years a newborn can expect to live in full health.</p>
+
+  <div class="callout">
+    <strong>Reading the stunting gap.</strong> The national rate is 19.8%, but the 2024 survey found 40.0% in Highland Papua and 37.0% in East Nusa Tenggara. A single national average hides the places where the problem is worst.
+  </div>
+
+  <h2>Sources for this page</h2>
+  <ul class="sources">
+    <li>World Bank, World Development Indicators — life expectancy, under-five mortality, health spending, physicians, hospital beds and maternal mortality, 2023–2024.</li>
+    <li>United Nations Inter-agency Group for Child Mortality Estimation (UN IGME) — infant mortality, 2024.</li>
+    <li>Ministry of Health, Republic of Indonesia — stunting prevalence (SSGI/SKI surveys), 2019–2024.</li>
+    <li>BPS (Susenas) and World Health Organization — health insurance coverage and healthy life expectancy, 2023–2024.</li>
+  </ul>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    Angka Nusantara is an independent reference site. It is not affiliated with the World Bank, the World Health Organization, the Ministry of Health or any government body. Figures are quoted with their publisher and year; check the source list on each page before reusing a number.
+  </div>
+</footer>
+<script type="module" src="main.js"></script>
+</body>
+</html>
